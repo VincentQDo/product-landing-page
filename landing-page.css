@@ -79,6 +79,18 @@ main {
   height: 25vh;
 }
 
+.full-width {
+  text-align: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+#pricing {
+  box-sizing: border-box;
+  color: white;
+  font-size: 40px;
+}
+
 .items-container {
   padding: 0;
   list-style: none;
@@ -155,6 +167,12 @@ main {
   box-shadow: 0px 0px 30px #f15406;
 }
 
+@media only screen and (max-width: 768px) {
+  main {
+    margin-top: 160px;
+  }
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .description {
@@ -180,7 +198,6 @@ main {
 @media only screen and (min-width: 992px) {
   .description {
     width: 840px;
-    height: 315px;
     margin: auto;
     margin-bottom: 30px;
   }
