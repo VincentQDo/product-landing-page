@@ -56,8 +56,8 @@ header {
   justify-content: center;
 }
 
-main {
-  margin-top: 120px;
+.invis-pad {
+  padding: 50px;
 }
 
 .title {
@@ -70,6 +70,10 @@ main {
   border: solid #f15406 0.5px;
   border-radius: 2px;
   box-shadow: 0px 0px 10px #f15406;
+}
+
+#quote-sig {
+  color: #f15406;
 }
 
 .embeded-vid {
@@ -92,15 +96,14 @@ main {
 }
 
 .items-container {
-  padding: 0;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
   justify-content: center;
 }
 
 .item-card {
-  display: inline-block;
   width: 70%;
   height: auto;
   border: solid #f15406 0.5px;
@@ -116,14 +119,17 @@ main {
 
 .item-content {
   box-sizing: border-box;
+  padding: 0px 1px;
   width: 100%;
 }
 
 .item-description {
+  box-sizing: border-box;
   width: 100%;
-  height: 20%;
+  height: 60px;
+  overflow: hidden;
   color: red;
-  margin: 0px 4px;
+  margin: auto;
   text-align: center;
 }
 
@@ -180,13 +186,16 @@ main {
     margin: auto;
     margin-bottom: 30px;
   }
+
   .embeded-vid {
     height: 38vh;
   }
+
   .item-card {
     width: 35%;
     margin: 20px 20px;
   }
+
   .input-field {
     display: block;
     justify-self: auto;
@@ -194,6 +203,7 @@ main {
     margin: 15px auto;
   }
 }
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .description {
@@ -201,22 +211,26 @@ main {
     margin: auto;
     margin-bottom: 30px;
   }
+
   .embeded-vid {
     width: 840px;
     height: 472.5px;
   }
+
   .item-card {
     display: block;
     width: 20%;
     margin: 20px 20px;
   }
+
   .item-description {
-    width: 80%;
     padding: 5px;
   }
+
   .input-field {
     width: 20%;
   }
+
   .btn {
     margin-top: 10px;
   }
