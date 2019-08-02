@@ -1,18 +1,11 @@
 html {
-  font-family: 'Roboto', sans-serif;
-}
-
-main {
-  padding-top: 90%;
+  font-family: "Saira Stencil One", cursive;
+  background-color: #262c3a;
+  color: white;
 }
 
 body {
   margin: 0;
-
-}
-
-#header-img {
-  padding-top: 60px;
 }
 
 .nav-bar {
@@ -20,27 +13,128 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #e27d60;
-
 }
 
 .nav-bar ul {
   display: flex;
+  flex-flow: wrap;
+  justify-content: center;
   list-style: none;
   padding: 0;
   margin: 0;
+  background-color: #262c3a;
 }
 
 .nav-link {
   display: block;
-  padding: 15px;
+  padding: 10px;
   text-decoration: none;
   font-size: 20px;
   color: white;
-  background-color: #e27d60;
+  flex-basis: auto;
 }
 
 .nav-link:hover {
-  color: black;
-  background-color: white;
+  color: #6c7999;
+  /* background-color: #4b5772; */
+}
+
+.logo {
+  max-width: 140px;
+  max-height: 140px;
+  margin-top: -37px;
+}
+
+#logo-container {
+  text-align: center;
+  width: 100%;
+  max-height: 52px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  margin-top: 120px;
+}
+
+.title {
+  text-align: center;
+}
+
+.description {
+  margin: 15px 10px;
+  padding: 5px;
+  border: solid #f15406 0.5px;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px #f15406;
+}
+
+.embeded-vid {
+  display: block;
+  margin: auto;
+  width: 90vw;
+  height: 25vh;
+}
+
+.items-container {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  width: 70%;
+  height: auto;
+  border: solid #f15406 0.5px;
+  box-shadow: 0px 0px 18px #f15406;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.item-content {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.item-name {
+  color: #f15406;
+  font-size: 35px;
+}
+
+.btn {
+  font-family: inherit;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  text-shadow: 2px 2px #262c3a;
+  background-color: #f15406;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  padding: 0px 20px;
+  margin: 10px;
+  -webkit-appearance: none;
+}
+
+#form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.input-field {
+  padding: 13px;
+  margin: 15px;
+  width: 85%;
+  border-radius: 5px;
+  border: none;
+}
+
+.input-field:focus {
+  box-shadow: 0px 0px 30px #f15406;
 }
